@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Root from './components/root/Root';
 import Home from './components/home/Home';
+import JobDetails from './components/home/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>
+      },
+      {
+        path: "/job/:id",
+       
+        element:<JobDetails></JobDetails>
       }
     ]
   },
